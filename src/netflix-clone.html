@@ -9,41 +9,140 @@
     body{
         background-size: cover;
     }
-    .shadow{
-        background-color: rgba(0, 0, 0, 0.3);
-        height: 150px;
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    #shadow{
+        background-color: rgba(0, 0, 0, 0.644);
+        height: 120vh;
         width: 100%;
-        margin-left: -50px;
-        margin-top: -50px;
-        margin-bottom: -50px;
     }
-    header{
-        color: white;
-        font-size: 30px;
-        display: flex;
-        justify-content: space-between;
-    }
-    .brand-name{
-        font-size: 30px;
-        font-weight: bold;
+    #brand-title{
+        font-size: xx-large;
         color: red;
-
+        font-weight: bold;
+        font: Bebas Neue;
+        margin-left: 80px;
+       
     }
+     header{
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: 75% 25% ;
+        padding-bottom: 150px;
+     }
+     .lang{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        justify-content: space-evenly;
+        color: white;
+        border: 1px solid white;
+        background-color: rgba(0, 0, 0, 0.502);
+        height: 30px;
+        width: 120px;
+       
+        
+     }
+     #sign-in{
+        background-color: red;
+        color: white;
+        height: 30px;
+        width: 60px;
+        border-radius: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+        
+     }
+     #main{
+        display: flex;
+        justify-content: space-evenly;
+
+     }
+    #headline ,#second-line , #third-line{
+        color: white;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        width: 100%;
+        
+    }
+    #headline{
+        font-size: xxx-large;
+        font-weight: bold;
+    }
+    #second-line{
+        font-size: xx-large;
+    }
+    #third-line{
+        font-size: x-large;
+    }
+
+    #email{
+        height: 50px;
+        width: 350px;
+        border: 1px solid white;
+        background-color: rgba(0, 0, 0, 0.416);
+        color: white;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        padding-left: 30px;
     
+    }
+    #started{
+        height: 50px;
+        width: 200px;
+        background-color: red;
+        color: white;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: x-large;
+        margin-left: 30px;
+    }
+    #last-section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     </style>
 
+
 <body background="../public/images/netflix-banner.jpg">
-    <div class="shadow"></div>
+    <div id="shadow">
     <header>
-        <div>
-            <div class="brand-name">NETFLIX</div>
-            <div>
-                <span class="bi bi-globe"></span>
-                <span>Language</span>
-                <span class="bi bi-chevron-down"></span>
-                <span>Signing</span>
+        <div id="brand-title">NETFLIX</div>
+        <div id="main">
+            <div class="lang">
+                <div class="bi bi-translate"></div>
+                <div>English</div>
+                
+                <div class="bi bi-chevron-bar-down"></div>
             </div>
+            
+            <div id="sign-in">Sign In </div>
         </div>
+        
     </header>
+    <section>
+        <div id="headline">Unlimited movies, TV shows and more</div>
+        <div id="second-line">Watch anywhere. Cancel anytime.</div>
+        <div id="third-line">Ready to watch? Enter your email to create or restart your membership.</div>
+    </section>
+
+    <section id="last-section">
+        <div id="email">Email Address</div>
+        <div id="started">Get Started   > </div>
+    </section>
+
+</div>
 </body>
 </html>

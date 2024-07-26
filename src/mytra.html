@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYNTRA</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+</head>
+<style>
+     *{
+        padding: 5px;
+        margin: 0;
+    }
+header{
+    display: grid;
+    grid-template-columns: 60% 40% ;
+    height: 100px;
+    position: sticky;
+   
+    
+}
+section{
+    padding-bottom: 400px;
+    background-color: rgba(0, 0, 0, 0.221);
+    
+}
+#head-left{
+   display: grid;
+   grid-template-columns: 14% 14% 14% 14% 14% 14% 14%  ;
+}
+#head-right{
+    
+    display: grid;
+    grid-template-columns: 60% 40%;
+
+}
+#logos{
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr ;
+}
+   
+   
+
+   
+
+
+#search-bar{
+display: flex;  
+justify-content: center;
+align-items: center;
+border: 1px solid black;
+height: 20px;
+
+}
+
+
+footer{
+    background-color: rgba(255, 255, 255, 0.92);
+    color: rgba(0, 0, 0, 0.76);
+    display: grid;
+    grid-template-columns: 20% 20% 30% 30%;
+    
+}
+footer div ,span {
+    display: block;
+}
+#title{
+    color: black;
+    font-weight: bold;
+    font-size: small;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+aside span {
+    display: inline-block;
+    
+}
+
+#title-2{
+    padding-top: 30px;
+}
+#box{
+    border: 1px solid black;
+    height: 35px;
+    width: 120px;
+    display: inline-block;
+    border-radius: 4%;
+}
+#logo-name{
+    font-size: small;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#logo-sign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+</style>
+<body>
+    <header>
+     <div id="head-left">
+       <div>MYNTRA</div>
+       <div>MEN</div>
+       <div>WOMEN</div>
+       <div>KIDS</div>
+       <div>HOME & LIVING</div>
+       <div>BEAUTY</div>
+       <div>STUDIO</div>
+     </div>
+     <div id="head-right">
+        <div id="search-bar">
+        <span class="bi bi-search" id="search"></span>
+        <span id="search">Search for products,brands and more </span>
+        </div>
+        
+        <div id="logos">
+            <div >
+                <div class="bi bi-person"  id="logo-sign"></div>
+                <div id="logo-name">Profile</div>
+            </div>
+            <div >
+                <div class="bi bi-heart" id="logo-sign"></div>
+                <div id="logo-name">Wishlist</div>
+                
+            </div>
+            <div>
+                <div class="bi bi-bag" id="logo-sign"></div>
+                <div id="logo-name">Bag</div>
+            </div>
+        
+        </div>
+        
+        
+     </div>
+    </header>
+    <section>
+
+    </section>
+    <footer>
+       <div id="first-div">
+          <div  id="title">ONLNE SHOPPING</div>
+          <span>Men</span>
+          <span>Women</span>
+          <span>Kids</span>
+          <span>Home & Living</span>
+          <span>Beauty</span>
+          <span>Gift Cards</span>
+          <span>Myntra Insider</span>
+
+          <div id="title" >USEFUL LINKS</div>
+          <span>Blog</span>
+          <span>Careers</span>
+          <span>Sitemap</span>
+          <span>Corporate Information</span>
+          <span>Whitehat</span>
+          <span>Cleartrip</span>
+        </div>
+        <div id="second-div">
+            <div id="title">CUSTOMER POLICIES</div>
+            <span>Contact Us </span>
+            <span>FAQ </span>
+            <span>T&C </span>
+            <span>Terms of use </span>
+            <span>Track Orders </span>
+            <span>Shiping </span>
+            <span>Cancellation</span>
+            <span>Returns</span>
+            <span>Private Policies</span>
+            <span>Grievance Officer</span>
+            
+        </div>
+
+        <div id="third-div">
+            <div id="title">EXPERIENCE MYNTRA APP ON MOBILE</div>
+            <span id="box">Get it on Goggle Play</span>
+            <span id="box">Download it on App Store</span>
+
+            <div  id="title">KEEP IN TOUCH</div>
+            <aside>
+                <span class="bi bi-facebook"></span>
+                <span class="bi bi-twitter"></span>
+                <span class="bi bi-youtube"></span>
+                <span class="bi bi-instagram"></span>
+            </aside>
+        </div>
+
+        <div id="fourth-div">
+            <div>
+                <span id="title-2"><b>100% ORIGINAL</b> guarentee for </span>
+                <span>all products at myntra.com</span>
+            </div>
+            <div >
+                <span ><b>Return within 14 days</b> of  </span>
+                <span>receiving your order</span>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>
